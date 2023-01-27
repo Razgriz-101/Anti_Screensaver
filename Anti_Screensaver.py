@@ -11,6 +11,13 @@ class App(tk.Frame):
         self.master.geometry("500x200")  # ウィンドウサイズを「500*200」に設定
         self.master.propagate(0)  # ウィンドウがウィジェットに合わせて小さくなることを禁止
 
+        # BASE64でタイトルアイコンを挿入
+        path = r"E:\Anti_Screensaver.txt"
+        with open(path, 'r') as f:
+            icon = f.read()
+            print(icon)
+        self.master.iconphoto(False, tk.PhotoImage(data=icon))
+
         self.anti_s_state = 0  # アンチスクリーンセーバーの作動状態を保持
 
         # ラベルの変数
