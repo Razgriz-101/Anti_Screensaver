@@ -11,7 +11,7 @@ class App(tk.Frame):
         self.master.geometry("500x200")  # ウィンドウサイズを「500*200」に設定
         self.master.propagate(0)  # ウィンドウがウィジェットに合わせて小さくなることを禁止
 
-        self.anti_s_state = 0  # アンチスクリーンセイバーの作動状態を保持
+        self.anti_s_state = 0  # アンチスクリーンセーバーの作動状態を保持
 
         # ラベルの変数
         self.label_text_list = ["Anti Screensaver is Disable\n", "Anti Screensaver is Enable\n"]
