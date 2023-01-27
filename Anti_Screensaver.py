@@ -15,7 +15,6 @@ class App(tk.Frame):
         path = r"E:\Anti_Screensaver.txt"
         with open(path, 'r') as f:
             icon = f.read()
-            print(icon)
         self.master.iconphoto(False, tk.PhotoImage(data=icon))
 
         self.anti_s_state = 0  # アンチスクリーンセーバーの作動状態を保持
